@@ -60,4 +60,14 @@ public class Cliente {
     public void setSexo(Enum sexo) {
         this.sexo = sexo;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nombre='" + nombre+ '\'' +
+                ", apellido=" + apellido +
+                ", email=" + email +
+                '}';
+    }
 }

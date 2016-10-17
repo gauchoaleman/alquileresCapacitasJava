@@ -1,5 +1,6 @@
 package edu.capacitas.test;
 
+import edu.capacitas.test.helper.ClienteHelper;
 import edu.capacitas.test.helper.RecursoHelper;
 
 /**
@@ -13,7 +14,7 @@ public class MainTest {
         System.out.println("***********************************************");
 
         System.out.println("** Test de Clientes");
-
+        ClienteHelper.crearCliente();
 
         System.out.println("** Test de Recursos");
         RecursoHelper.crearRecurso();
