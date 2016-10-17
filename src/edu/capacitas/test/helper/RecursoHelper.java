@@ -13,5 +13,11 @@ public class RecursoHelper {
         recurso.setDescripcion("lala");
 
         System.out.println(recurso);
+
+        Recurso recurso1 = new Recurso();
+        recurso.setcostoxhora("15,44");
+
+        System.out.print(recurso1);
+
     }
 }

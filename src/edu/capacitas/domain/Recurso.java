@@ -9,6 +9,8 @@ public class Recurso {
     private String descripcion;
     private Boolean ocupado;
     private Float costoxdia;
+    private Float costoxhora;
+
 
     public Long getId() {
         return id;
@@ -50,6 +52,10 @@ public class Recurso {
         this.costoxdia = costoxdia;
     }
 
+    public Float getcostoxhora(Float costoxhora) { return costoxhora; }
+
+    public void setcostoxhora(Float costoxhora) {this.costoxhora = costoxhora; }
+
     @Override
     public String toString() {
         return "Recurso{" +
@@ -58,6 +64,7 @@ public class Recurso {
                 ", descripcion='" + descripcion + '\'' +
                 ", ocupado=" + ocupado +
                 ", costoxdia=" + costoxdia +
+                ", costoxhora=" + costoxhora +
                 '}';
     }
 }
