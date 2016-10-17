@@ -5,7 +5,7 @@ package edu.capacitas.domain;
  */
 public class Recurso {
     private Long id;
-    private Enum tipo_id;
+    private TipoRecurso tipoRecurso;
     private String descripcion;
     private Boolean ocupado;
     private Float costoxdia;
@@ -18,12 +18,12 @@ public class Recurso {
         this.id = id;
     }
 
-    public Enum getTipo_id() {
-        return tipo_id;
+    public Enum getTipoRecursod() {
+        return tipoRecurso;
     }
 
-    public void setTipo_id(Enum tipo_id) {
-        this.tipo_id = tipo_id;
+    public void setTipoRecurso(TipoRecurso tipoRecurso) {
+        this.tipoRecurso = tipoRecurso;
     }
 
     public String getDescripcion() {
@@ -54,7 +54,6 @@ public class Recurso {
     public String toString() {
         return "Recurso{" +
                 "id=" + id +
-                ", tipo_id=" + tipo_id +
                 ", descripcion='" + descripcion + '\'' +
                 ", ocupado=" + ocupado +
                 ", costoxdia=" + costoxdia +
