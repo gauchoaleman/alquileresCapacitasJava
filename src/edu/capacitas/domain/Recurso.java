@@ -1,7 +1,5 @@
 package edu.capacitas.domain;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 /**
  * Created by luks on 07/10/16.
  */
@@ -50,5 +48,16 @@ public class Recurso {
 
     public void setCostoxdia(Float costoxdia) {
         this.costoxdia = costoxdia;
+    }
+
+    @Override
+    public String toString() {
+        return "Recurso{" +
+                "id=" + id +
+                ", tipo_id=" + tipo_id +
+                ", descripcion='" + descripcion + '\'' +
+                ", ocupado=" + ocupado +
+                ", costoxdia=" + costoxdia +
+                '}';
     }
 }
