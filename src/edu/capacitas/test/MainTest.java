@@ -15,8 +15,9 @@ public class MainTest {
 
         System.out.println("** Test de Clientes");
         ClienteHelper.crearCliente();
-        // TODO modificarCliente
-        // TODO listarCliente
+        ClienteHelper.modificarCliente();
+        ClienteHelper.listarClientes();
+
 
         System.out.println("** Test de Recursos");
         RecursoHelper.crearRecurso();
