@@ -15,10 +15,17 @@ public class MainTest {
 
         System.out.println("** Test de Clientes");
         ClienteHelper.crearCliente();
+        // TODO modificarCliente
+        // TODO listarCliente
 
         System.out.println("** Test de Recursos");
         RecursoHelper.crearRecurso();
         RecursoHelper.modificarRecurso();
+        // TODO listarRecursos();
+
+        System.out.println("** Test de Alquiler");
+        // TODO plantear crearAlquiler
+
 
     }
 }
