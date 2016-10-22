@@ -1,6 +1,7 @@
 package edu.capacitas.test.helper;
 
 import edu.capacitas.domain.Recurso;
+import edu.capacitas.domain.TipoRecurso;
 
 /**
  * Created by luks on 17/10/16.
@@ -8,16 +9,35 @@ import edu.capacitas.domain.Recurso;
 public class RecursoHelper {
 
     public static void crearRecurso() {
-        System.out.println("Arranca Crear Recurso");
+        System.out.println("Test crearRecurso()");
         Recurso recurso = new Recurso();
-        recurso.setDescripcion("lala");
+        recurso.setId(new Long("1"));
+        recurso.setDescripcion("Fiat Idea");
+        recurso.setcostoxhora(new Float("25"));
+        recurso.setCostoxdia(new Float("50"));
+        recurso.setOcupado(Boolean.FALSE);
+        recurso.setTipoRecurso(TipoRecurso.ALOJAMIENTO);
 
         System.out.println(recurso);
 
-        Recurso recurso1 = new Recurso();
-        recurso.setcostoxhora("15,44");
+    }
 
-        System.out.print(recurso1);
+    public static void modificarRecurso() {
+        System.out.println("Test modificarRecurso()");
+        // La idea es mostrar cambios en una misma instancia
+        Recurso recurso = new Recurso();
+        recurso.setId(new Long("1"));
 
+        Recurso otroRecurso = new Recurso();
+        otroRecurso.setId(new Long("2"));
+        otroRecurso.setDescripcion("Otro Recurso");
+        otroRecurso.setcostoxhora(new Float("12.10"));
+
+        System.out.println(recurso);
+        System.out.println(otroRecurso);
+
+        recurso.setDescripcion("Recurso 1");
+        System.out.println(recurso);
+        System.out.println(otroRecurso);
     }
 }

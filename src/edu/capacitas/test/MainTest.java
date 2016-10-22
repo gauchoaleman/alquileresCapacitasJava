@@ -18,6 +18,7 @@ public class MainTest {
 
         System.out.println("** Test de Recursos");
         RecursoHelper.crearRecurso();
+        RecursoHelper.modificarRecurso();
 
     }
 }
