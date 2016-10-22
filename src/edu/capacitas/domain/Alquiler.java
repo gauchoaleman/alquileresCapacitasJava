@@ -1,6 +1,7 @@
 package edu.capacitas.domain;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by luks on 07/10/16.
@@ -8,7 +9,7 @@ import java.util.Date;
 public class Alquiler {
     private Long id;
     private Cliente cliente;
-    private Recurso recurso;
+    private List<Recurso> recursoList;
     private Date fechadesde;
     private Date fechahasta;
     private Float costo;
@@ -30,12 +31,12 @@ public class Alquiler {
         this.cliente = cliente;
     }
 
-    public Recurso getRecurso() {
-        return recurso;
+    public List<Recurso> getRecursoList() {
+        return recursoList;
     }
 
-    public void setRecurso(Recurso recurso) {
-        this.recurso = recurso;
+    public void setRecursoList(List<Recurso> recursoList) {
+        this.recursoList = recursoList;
     }
 
     public Date getFechadesde() {
