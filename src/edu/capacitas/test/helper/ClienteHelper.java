@@ -23,6 +23,24 @@ public class ClienteHelper {
         System.out.println(cliente);
     }
 
+    public static Cliente obtenerCliente() {
+        System.out.println("Arranca Crear Cliente");
+        Cliente cliente = new Cliente();
+        cliente.setId(new Long("1"));
+        cliente.setNombre("Stefan");
+        cliente.setApellido("Ronacher");
+        cliente.setEmail("gauchoaleman@yahoo.com");
+        cliente.setDni("92844240");
+        // FIXME
+        /*Sexo sexo = new Sexo;
+        Sexo =Sexo.MASCULINO;
+        cliente.setSexo(Sexo);
+        */
+        System.out.println(cliente);
+        return cliente;
+    }
+
+
     public static void modificarCliente() {
         System.out.println("Test modificarCliente()");
         // La idea es mostrar cambios en una misma instancia

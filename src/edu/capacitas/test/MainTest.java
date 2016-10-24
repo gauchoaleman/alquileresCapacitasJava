@@ -1,5 +1,7 @@
 package edu.capacitas.test;
 
+import edu.capacitas.domain.Alquiler;
+import edu.capacitas.test.helper.AlquilerHelper;
 import edu.capacitas.test.helper.ClienteHelper;
 import edu.capacitas.test.helper.RecursoHelper;
 
@@ -25,6 +27,9 @@ public class MainTest {
         // TODO listarRecursos();
 
         System.out.println("** Test de Alquiler");
+        AlquilerHelper.crearAlquiler();
+
+
         // TODO plantear crearAlquiler
 
 

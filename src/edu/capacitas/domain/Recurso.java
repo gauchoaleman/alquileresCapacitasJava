@@ -61,6 +61,7 @@ public class Recurso {
         return "Recurso{" +
                 "id=" + id +
                 ", descripcion='" + descripcion + '\'' +
+                ", tipo ='" + tipoRecurso + '\'' +
                 ", ocupado=" + ocupado +
                 ", costoxdia=" + costoxdia +
                 ", costoxhora=" + costoxhora +

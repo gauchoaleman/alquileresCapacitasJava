@@ -40,4 +40,20 @@ public class RecursoHelper {
         System.out.println(recurso);
         System.out.println(otroRecurso);
     }
+
+    public static Recurso obtenerRecurso(Long id, TipoRecurso tipo, String descripcion) {
+        System.out.println("Test obtenerRecurso()");
+        Recurso recurso = new Recurso();
+        recurso.setId(id);
+        recurso.setDescripcion(descripcion);
+        recurso.setcostoxhora(new Float("25"));
+        recurso.setCostoxdia(new Float("50"));
+        recurso.setOcupado(Boolean.FALSE);
+        //recurso.setTipoRecurso(TipoRecurso.ALOJAMIENTO);
+        recurso.setTipoRecurso(tipo);
+
+        System.out.println(recurso);
+        return recurso;
+
+    }
 }
