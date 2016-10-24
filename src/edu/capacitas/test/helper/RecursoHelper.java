@@ -27,6 +27,13 @@ public class RecursoHelper {
         // La idea es mostrar cambios en una misma instancia
         Recurso recurso = new Recurso();
         recurso.setId(new Long("1"));
+        recurso.setDescripcion("Corsa 4 puertas");
+        recurso.setCostoxdia(new Float("37,5"));
+        recurso.setCostoxdia(new Float("900"));
+        recurso.setOcupado(Boolean.TRUE);
+        recurso.setTipoRecurso(TipoRecurso.AUTO);
+
+
 
         Recurso otroRecurso = new Recurso();
         otroRecurso.setId(new Long("2"));
