@@ -28,7 +28,7 @@ public class RecursoHelper {
         Recurso recurso = new Recurso();
         recurso.setId(new Long("1"));
         recurso.setDescripcion("Corsa 4 puertas");
-        recurso.setCostoxdia(new Float("37,5"));
+        recurso.setCostoxdia(new Float("37.5"));
         recurso.setCostoxdia(new Float("900"));
         recurso.setOcupado(Boolean.TRUE);
         recurso.setTipoRecurso(TipoRecurso.AUTO);
@@ -56,7 +56,6 @@ public class RecursoHelper {
         recurso.setcostoxhora(new Float("25"));
         recurso.setCostoxdia(new Float("50"));
         recurso.setOcupado(Boolean.FALSE);
-        //recurso.setTipoRecurso(TipoRecurso.ALOJAMIENTO);
         recurso.setTipoRecurso(tipo);
 
         System.out.println(recurso);
