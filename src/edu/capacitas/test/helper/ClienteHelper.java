@@ -15,11 +15,9 @@ public class ClienteHelper {
         cliente.setApellido("Ronacher");
         cliente.setEmail("gauchoaleman@yahoo.com");
         cliente.setDni("92844240");
-        // FIXME
-        /*Sexo sexo = new Sexo;
-        Sexo =Sexo.MASCULINO;
-        cliente.setSexo(Sexo);
-        */
+
+        cliente.setSexo(Sexo.MASCULINO);
+
         System.out.println(cliente);
     }
 
@@ -31,11 +29,7 @@ public class ClienteHelper {
         cliente.setApellido("Ronacher");
         cliente.setEmail("gauchoaleman@yahoo.com");
         cliente.setDni("92844240");
-        // FIXME
-        /*Sexo sexo = new Sexo;
-        Sexo =Sexo.MASCULINO;
-        cliente.setSexo(Sexo);
-        */
+        cliente.setSexo(Sexo.MASCULINO);
         System.out.println(cliente);
         return cliente;
     }
@@ -70,20 +64,20 @@ public class ClienteHelper {
         cliente1.setApellido("Ronacher");
         cliente1.setEmail("gauchoaleman@yahoo.com");
         cliente1.setDni("92844240");
-
+        cliente1.setSexo(Sexo.FEMENINO);
         Cliente cliente2 = new Cliente();
         cliente2.setId(new Long("2"));
         cliente2.setNombre("Lucas");
         cliente2.setApellido("Passalaqua");
         cliente2.setEmail("lucas@yahoo.com");
-
+        cliente2.setSexo(Sexo.MASCULINO);
         Cliente cliente3 = new Cliente();
         cliente3.setId(new Long("3"));
         cliente3.setNombre("Federico");
         cliente3.setApellido("Bordini");
         cliente3.setEmail("federico@yahoo.com");
         cliente3.setDni("3232323232");
-
+        cliente3.setSexo(Sexo.MASCULINO);
         Cliente[] clienteArray = {cliente1,cliente2,cliente3};
 
         for(int i=0; i<clienteArray.length; i++){
