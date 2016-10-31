@@ -84,7 +84,7 @@ public class RecursoHelper {
         recurso2.setOcupado(Boolean.FALSE);
         recurso2.setTipoRecurso(TipoRecurso.AUTO);
 
-        Recurso recurso3 = new Recurso();
+        Recurso recurso4 = new Recurso();
         recurso3.setId(new Long("3"));
         recurso3.setDescripcion("");
         recurso3.setcostoxhora(new Float(""));
