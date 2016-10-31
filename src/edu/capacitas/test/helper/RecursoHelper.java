@@ -1,5 +1,6 @@
 package edu.capacitas.test.helper;
 
+import edu.capacitas.domain.Cliente;
 import edu.capacitas.domain.Recurso;
 import edu.capacitas.domain.TipoRecurso;
 
@@ -61,6 +62,38 @@ public class RecursoHelper {
 
         System.out.println(recurso);
         return recurso;
-
     }
+
+    public static void listarRecurso() {
+        System.out.println("Test listarRecurso()");
+
+        Recurso recurso1 = new Recurso();
+        recurso1.setId(new Long("1"));
+        recurso1.setDescripcion("");
+        recurso1.setcostoxhora(new Float(""));
+        recurso1.setCostoxdia(new Float(""));
+        recurso1.setOcupado(Boolean.FALSE);
+        recurso1.setTipoRecurso(TipoRecurso.HERRAMIENTA);
+
+
+        Recurso recurso2 = new Recurso();
+        recurso2.setId(new Long("2"));
+        recurso2.setDescripcion("");
+        recurso2.setcostoxhora(new Float(""));
+        recurso2.setCostoxdia(new Float(""));
+        recurso2.setOcupado(Boolean.FALSE);
+        recurso2.setTipoRecurso(TipoRecurso.AUTO);
+
+        Recurso recurso3 = new Recurso();
+        recurso3.setId(new Long("3"));
+        recurso3.setDescripcion("");
+        recurso3.setcostoxhora(new Float(""));
+        recurso3.setCostoxdia(new Float(""));
+        recurso3.setOcupado(Boolean.FALSE);
+        recurso3.setTipoRecurso(TipoRecurso.ALOJAMIENTO);
+
+        Recurso[] recursoArray = {recurso1,recurso2,recurso3};
+
+        for(int i=0; i<recursoArray.length; i++){
+            System.out.println(recursoArray[i]);
 }
