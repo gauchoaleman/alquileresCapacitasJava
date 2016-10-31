@@ -34,17 +34,17 @@ public class AlquilerHelper {
 
         alquiler.setCliente(cliente);
         alquiler.setRecursoList(listRecurso);
-/*
-        SimpleDateFormat formatoFecha1 = new SimpleDateFormat("dd/MM/yyyy");
-        Date fechadesde = formatoFecha1.parse("29/10/2016");
 
-        SimpleDateFormat formatoFecha2 = new SimpleDateFormat("dd/mm/yyyy hh:mm");
-        Date fechahasta= formatoFecha2.parse("2016-10-30 ");
+        Calendar fechaDesde = Calendar.getInstance();
+        fechaDesde.set(2016,11,29);
 
-        Calendar fechadesde= Calendar.getInstance();
-        Calendar fechahasta= Calendar.getInstance();
-        alquiler.setFechadesde(new Date("2016-10-29"));
-        alquiler.setFechahasta(new Date("2016-10-30"));*/
+        Calendar fechaHasta = Calendar.getInstance();
+        fechaHasta.set(Calendar.DAY_OF_MONTH, 29);
+        fechaHasta.set(Calendar.MONTH, 12);
+        fechaHasta.set(Calendar.YEAR, 2016);
+
+        alquiler.setFechaDesde(fechaDesde);
+        alquiler.setFechaHasta(fechaHasta );
         alquiler.setCosto(new Float("20"));
         alquiler.setPagado(true);
 
@@ -62,8 +62,8 @@ public class AlquilerHelper {
         alquiler.setCliente(cliente);
 
 
-        alquiler.setFechadesde(new Date("2016-10-29"));
-        alquiler.setFechahasta(new Date("2016-10-30"));
+        /*alquiler.setFechadesde(new Date("2016-10-29"));
+        alquiler.setFechahasta(new Date("2016-10-30"));*/
         alquiler.setCosto(new Float("20"));
         alquiler.setPagado(true);
 

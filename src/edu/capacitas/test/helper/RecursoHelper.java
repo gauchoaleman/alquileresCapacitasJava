@@ -91,8 +91,9 @@ public class RecursoHelper {
         recurso3.setOcupado(Boolean.FALSE);
         recurso3.setTipoRecurso(TipoRecurso.ALOJAMIENTO);
 
-        Recurso[] recursoArray = {recurso1,recurso2,recurso3};
+        Recurso[] recursoArray = {recurso1, recurso2, recurso3};
 
-        for(int i=0; i<recursoArray.length; i++){
+        for (int i = 0; i < recursoArray.length; i++) {
             System.out.println(recursoArray[i]);
-}
+        }
+    }}

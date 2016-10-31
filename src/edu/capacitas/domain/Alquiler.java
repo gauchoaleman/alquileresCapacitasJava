@@ -1,6 +1,7 @@
 package edu.capacitas.domain;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -10,8 +11,8 @@ public class Alquiler {
     private Long id;
     private Cliente cliente;
     private List<Recurso> recursoList;
-    private Date fechadesde;
-    private Date fechahasta;
+    private Calendar fechaDesde;
+    private Calendar fechaHasta;
     private Float costo;
     private Boolean pagado;
 
@@ -39,20 +40,20 @@ public class Alquiler {
         this.recursoList = recursoList;
     }
 
-    public Date getFechadesde() {
-        return fechadesde;
+    public Calendar getFechaDesde() {
+        return fechaDesde;
     }
 
-    public void setFechadesde(Date fechadesde) {
-        this.fechadesde = fechadesde;
+    public void setFechaDesde(Calendar fechaDesde) {
+        this.fechaDesde = fechaDesde;
     }
 
-    public Date getFechahasta() {
-        return fechahasta;
+    public Calendar getFechaHasta() {
+        return fechaHasta;
     }
 
-    public void setFechahasta(Date fechahasta) {
-        this.fechahasta = fechahasta;
+    public void setFechaHasta(Calendar fechaHasta) {
+        this.fechaHasta = fechaHasta;
     }
 
     public Float getCosto() {
@@ -69,5 +70,19 @@ public class Alquiler {
 
     public void setPagado(Boolean pagado) {
         this.pagado = pagado;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+        return "Alquiler{" +
+                "id=" + id +
+                ", cliente='" + cliente+ '\'' +
+
+                ", FechaDesde=" + df.format(fechaDesde.getTime())  +
+                ", FechaHasta=" + df.format(fechaHasta.getTime()) +
+                ", costo=" + costo +
+                ", pagado=" + pagado +
+                '}';
     }
 }
