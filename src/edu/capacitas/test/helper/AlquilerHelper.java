@@ -195,6 +195,9 @@ public class AlquilerHelper {
         System.out.println("**************************************");
         System.out.println("*             Factura                *");
         System.out.println("**************************************");
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+        Calendar calendario=Calendar.getInstance();
+        System.out.println("Fecha: "+df.format(calendario.getTime()));
         System.out.println("Nombre: "+alquiler.getCliente().getNombre());
         System.out.println("Apellido: "+alquiler.getCliente().getApellido());
         System.out.println("Dni: "+alquiler.getCliente().getDni());
