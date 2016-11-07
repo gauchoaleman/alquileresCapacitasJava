@@ -24,6 +24,7 @@ public class MainTest {
         System.out.println("** Test de Recursos");
         RecursoHelper.crearRecurso();
         RecursoHelper.modificarRecurso();
+        RecursoHelper.listarRecurso();
         // TODO listarRecursos();
 
         System.out.println("** Test de Alquiler");
