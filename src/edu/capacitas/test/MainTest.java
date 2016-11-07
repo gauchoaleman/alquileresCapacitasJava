@@ -28,9 +28,8 @@ public class MainTest {
 
         System.out.println("** Test de Alquiler");
         AlquilerHelper.crearAlquiler();
-
-
-        // TODO plantear crearAlquiler
+        AlquilerHelper.listarAlquileres();
+        AlquilerHelper.mostrarFacturaAlquiler(AlquilerHelper.obtenerAlquiler());
 
 
     }

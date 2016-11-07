@@ -74,12 +74,11 @@ public class Alquiler {
 
     @Override
     public String toString() {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         return "Alquiler{" +
                 "id=" + id +
                 ", cliente='" + cliente+ '\'' +
-
-                ", FechaDesde=" + df.format(fechaDesde.getTime())  +
+                ", FechaDesde=" + df.format(fechaDesde.getTime()) +
                 ", FechaHasta=" + df.format(fechaHasta.getTime()) +
                 ", costo=" + costo +
                 ", pagado=" + pagado +
