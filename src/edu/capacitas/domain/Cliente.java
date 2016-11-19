@@ -68,6 +68,7 @@ public class Cliente {
                 ", nombre='" + nombre+ '\'' +
                 ", apellido=" + apellido +
                 ", email=" + email +
+                ", dni=" + dni +
                 ", sexo=" + sexo +
                 '}';
     }
